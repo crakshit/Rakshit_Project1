@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+#top{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 99;
+}
+
+#top button{
+    padding: 0;
+    margin: -15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#top img{
+    width: 40%;
+}
+/*  ------------------- CSS for Parallax ---------------------*/
+
+
+.parallax {
+    background-image: url(../img/b1.jpg);
+    min-height: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.heading {
+    position: absolute;
+    color: #fff;
+    font-size: 500%;
+    top: 38%;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    text-shadow: 0 0 10px #000;
+}
+
+
+/*  ------------------- CSS for Title ---------------------*/
+.title{
+    display: flex;
+    background: #00a8cc;
+}
+
+.sub-title, .ingredients{
+    color: #ddd;
+    width: 50%;
+    margin: 5% 0 5%;
+}
+
+.sub-title next{
+    display: block;
+}
+
+.sub-title h2{
+    margin: 0;
+    line-height: 2em;
+    text-align: left;
+    padding-left: 40%;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-size: 2.3em;
+}
+
+.ingredients h3{
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.ingredients ul{
+    text-align: left;
+    padding-left: 45%;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: #ddd;
+    line-height: 1.3em;
+}
+
+.item:hover {
+    color: #444;
+}
+
+/*  ------------------- CSS for Steps ---------------------*/
+
+.steps{
+    max-width: 1200px;
+    margin: auto;
+    padding: 6% 5%;
+}
+
+.steps-item{
+    display: flex;
+    padding: 5% 5%;
+    
+}
+
+.visual{
+    width: 50%;
+    margin: auto;
+}
+
+.visual img{
+    width: 100%;
+    margin: auto;
+}
+
+.description{
+    width: 50%;
+    text-align: left;
+    padding-left: 7%;
+    
+}
+
+.header{
+    display: flex;
+    
+}
+
+.header-number{
+    margin-right: 15px;
+    border-radius: 50%;
+    background: #00a8cc;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.header-text{
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    color: #191919;
+    letter-spacing: 0.1em;
+    line-height: 45px;
+}
+
+.description p {
+    margin-top: 25px;
+    text-align: left;
+}
+
+.note{
+    font-size: 0.8em;
+    line-height: 20px;
+    color: #a3a3a3;
+}
+
+.steps-item:nth-of-type(odd){
+    background-color: #f9f9f9;
+}
+
+
+/*   Footer   */
+footer{
+    padding: 2%;
+    background-color: #00a8cc;
+    color: #222;
+    font-size: 0.9em
+}
+
+footer a{
+    
+    text-decoration: none;
+    color: #222;
+}
+
+footer a:hover{
+    color: #ccc;
+}
+
+
+
+@media only screen and (max-width: 890px){
+    
+    .steps-item, .title{
+        display: block;
+        
+    }
+    
+    .sub-title, .ingredients{
+        width: 100%;
+        margin: 0;
+        padding: 10px
+    }
+    
+    .sub-title h2{
+        border: none;
+        text-align: center;
+        letter-spacing: 0.3em;
+        line-height: 1em;
+        font-size: 2em;
+        padding: 0;
+    }
+    
+    .description{
+        padding: 40px 0 0 0;
+    }
+    
+    .ingredients ul{
+        text-align: center;
+        padding-left: 0;
+    }
+    
+    .visual, .description{
+        width: 100%;
+    
+    }
+    
+    .steps-item:nth-of-type(even){
+        background-color: transparent;
+    }
+    
+    #top{
+    bottom: 15px;
+    }
+    
+    #top img{
+    width: 30%;
+    }
+    
+    #top button{
+        margin: -20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
